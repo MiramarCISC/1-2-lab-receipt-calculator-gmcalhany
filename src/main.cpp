@@ -1,14 +1,15 @@
-#include <iomanip>
 #include <iostream>
-#include "receipt.hpp"
+#include <iomanip>
+#include "../include/receipt.hpp"
 
 using namespace std;
 
-int main() {
-    double item1 = 0.0;
-    double item2 = 0.0;
-    double item3 = 0.0;
-    double tipPercent = 0.0;
+int main()
+{
+    double item1;
+    double item2;
+    double item3;
+    double tipPercent;
 
     cout << "Receipt Calculator" << endl << endl;
 
@@ -30,6 +31,7 @@ int main() {
     double total = calculateTotal(subtotal, tax, tip);
 
     cout << fixed << setprecision(2);
+
     cout << endl;
     cout << "Subtotal: $" << subtotal << endl;
     cout << "Tax: $" << tax << endl;
